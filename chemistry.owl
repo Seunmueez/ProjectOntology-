@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Define Classes -->
+    <rdf:Description rdf:about="#Element">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Element</rdfs:label>
+        <rdfs:comment>An element is a substance made of atoms that all have the same number of protons in their atomic nuclei.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Compound">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Compound</rdfs:label>
+        <rdfs:comment>A chemical substance made up of two or more elements that are chemically bonded.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Molecule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Molecule</rdfs:label>
+        <rdfs:comment>A molecule is two or more atoms bonded together that form the basic unit of a chemical compound.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Acid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Acid</rdfs:label>
+        <rdfs:comment>An acid is a molecule or ion capable of donating a proton or accepting an electron pair in reactions.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Base">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Base</rdfs:label>
+        <rdfs:comment>A base is a substance that can accept hydrogen ions or, more generally, donate a pair of valence electrons.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Atom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Atom</rdfs:label>
+        <rdfs:comment>An atom is the smallest unit of matter, consisting of a nucleus (containing protons and neutrons) and electrons orbiting around it.</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Define Some Individuals (Instances) -->
+    <rdf:Description rdf:about="#Oxygen">
+        <rdf:type rdf:resource="#Element"/>
+        <rdfs:label>Oxygen</rdfs:label>
+        <rdfs:comment>An essential element for respiration in most living organisms. Atomic number 8.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Hydrogen">
+        <rdf:type rdf:resource="#Element"/>
+        <rdfs:label>Hydrogen</rdfs:label>
+        <rdfs:comment>The simplest and most abundant element in the universe. Atomic number 1.</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#Water">
+        <rdf:type rdf:resource="#Compound"/>
+        <rdfs:label>Water</rdfs:label>
+        <rdfs:comment>A compound consisting of two hydrogen atoms bonded to one oxygen atom (H2O).</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#HCl">
+        <rdf:type rdf:resource="#Compound"/>
+        <rdfs:label>Hydrochloric Acid</rdfs:label>
+        <rdfs:comment>A strong acid, often used in laboratories and in the stomach (HCl).</rdfs:comment>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#NaOH">
+        <rdf:type rdf:resource="#Compound"/>
+        <rdfs:label>Sodium Hydroxide</rdfs:label>
+        <rdfs:comment>A strong base used in manufacturing, also known as lye (NaOH).</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Define Some Properties (Optional) -->
+    <rdf:Description rdf:about="#has_formula">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:label>has formula</rdfs:label>
+        <rdfs:comment>Links chemical substances to their chemical formula.</rdfs:comment>
+    </rdf:Description>
+
+    <!-- Relationships between Classes -->
+    <rdf:Description rdf:about="#is_composed_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:label>is composed of</rdfs:label>
+        <rdfs:comment>Indicates the components that make up a compound or molecule.</rdfs:comment>
+    </rdf:Description>
+    
+</rdf:RDF>
